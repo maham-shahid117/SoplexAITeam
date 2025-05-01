@@ -17,7 +17,7 @@ print("Using SQLite database for offline development")
 from models import Doctor, Patient, Appointment, AppointmentSlot
 from appointment_manager import AppointmentManager
 from calendar_integration import GoogleCalendarService
-from config import BASE_DIR
+from SoplexAITeam.medchatbot.config import BASE_DIR
 
 # Set up logging
 logging.basicConfig(
@@ -135,7 +135,7 @@ class SmartAppointmentScheduler:
         Book a new appointment
         """
         try:
-            from config import APPOINTMENT_TYPES
+            from SoplexAITeam.medchatbot.config import APPOINTMENT_TYPES
 
             # Calculate end time based on appointment type duration
             if appointment_type not in APPOINTMENT_TYPES:

@@ -7,7 +7,7 @@ from database_sqlite import db_client
 from models import Appointment, Doctor, Patient, AppointmentSlot
 from scheduler import AppointmentScheduler
 from calendar_integration import GoogleCalendarService
-from config import APPOINTMENT_TYPES
+from SoplexAITeam.medchatbot.config import APPOINTMENT_TYPES
 
 logger = logging.getLogger(__name__)
 
